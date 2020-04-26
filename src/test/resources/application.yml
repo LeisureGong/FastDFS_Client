@@ -8,7 +8,7 @@ fdfs:
     width: 150
     height: 150
   tracker-list:
-    - 172.17.0.2:22122
+    - 47.98.192.149:22122
 #    - 185.25.103.20:22122
 #    - 192.168.174.42:22122
 #    - 192.168.174.48:22122
@@ -25,12 +25,15 @@ fdfs:
     width: 150
     height: 150
   tracker-list:
-    - 10.0.75.2:22122
+    - 47.98.192.149:22122
 
   pool:
     #从池中借出的对象的最大数目
     max-total: 153
-    max-wait-millis: 102
+    # 每个tracker地址的最大连接数
+    max-total-per-key: 102
+    # 连接耗尽时等待获取连接的最大毫秒数
+    max-wait-millis: 5000
     jmx-name-base: 1
     jmx-name-prefix: 1
 

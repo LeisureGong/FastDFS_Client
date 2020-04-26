@@ -12,7 +12,7 @@ public class ClientDemo {
 
     public static void main(String[] args) throws UnknownHostException, IOException {
 
-        Socket s = new Socket("192.168.99.100", 22122);
+        Socket s = new Socket("47.98.192.149", 22122);
 
         OutputStream out = s.getOutputStream();
 

@@ -10,13 +10,17 @@ import java.nio.charset.Charset;
  */
 @SuppressWarnings("unused")
 public class TestConstants {
-    private static String ip_home = "172.17.0.2";
-    private static String ip_work = "10.0.75.2";
-    private static String ip_work_store = "192.168.174.43";
+    private static String ip_home = "47.98.192.149";
+    //Tracker和Storage不在一个机器的环境下
+//    private static String ip_work = "47.98.192.149";
+//    private static String ip_work_store = "47.98.192.149";
     public final static int PORT = 22122;//22122
     public final static int STORE_PORT = 23000; //23000
+    //初始化Tracker地址
     public static InetSocketAddress address = new InetSocketAddress(ip_home, PORT);
+    //初始化Storage地址
     public static InetSocketAddress store_address = new InetSocketAddress(ip_home, STORE_PORT);
+
     public static final int soTimeout = 550;
     public static final int connectTimeout = 500;
     public static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");

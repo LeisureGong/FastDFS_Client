@@ -47,7 +47,7 @@ public class ConnectionPoolCustomizedConfigTest {
         assertEquals(153, connectionPoolConfig.getMaxTotal());
 
         LOGGER.debug("获取连接时的最大等待毫秒数={}", connectionPoolConfig.getMaxWaitMillis());
-        assertEquals(102, connectionPoolConfig.getMaxWaitMillis());
+        assertEquals(5000, connectionPoolConfig.getMaxWaitMillis());
     }
 
 }
